@@ -4,5 +4,5 @@
 
 #clientes-slider{
     will-change: transform;
-
+    width: max-content;
 }
