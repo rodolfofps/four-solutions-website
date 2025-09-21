@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Solutions - Consultoria em TI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <body class="bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] text-white">
+  <!-- Header -->
+  <header class="bg-[#112233] shadow-lg rounded-b-2xl border-b border-cyan-400">
+      <div class="container mx-auto flex items-center justify-between py-4 px-6">
+          <div class="flex items-center">
+              <img src="/assets/logo_4S_1.png" alt="Logo Four Solutions" class="h-10 w-auto mr-4">
+              <!-- <span class="font-bold text-xl text-blue-700">Four Solutions</span> -->
+            </div>
+            <nav class="space-x-6">
+               <!--<a href="#quem-somos" class="hover:text-blue-700 font-medium">Quem somos</a>
+                <a href="#portfolio" class="hover:text-blue-700 font-medium">Portifólio</a>
+                <a href="#servicos" class="hover:text-blue-700 font-medium">Serviços</a>
+                <a href="#orcamento" class="hover:text-blue-700 font-medium">Solicitar orçamento</a> -->
+                
+<a href="#quem-somos" class="relative cursor-pointer py-4 px-8 text-center font-barlow inline-flex justify-center text-base uppercase text-gray-100 rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden bg-transparent">
+  <span class="relative z-20">Quem somos</span>
+  <span class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"></span>
+</a>
+
+<a href="#portfolio" class="relative cursor-pointer py-4 px-8 text-center font-barlow inline-flex justify-center text-base uppercase text-gray-100 rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden bg-transparent">
+  <span class="relative z-20">PORTIFÓLIO</span>
+  <span class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"></span>
+</a>
+
+<a href="#servicos" class="relative cursor-pointer py-4 px-8 text-center font-barlow inline-flex justify-center text-base uppercase text-gray-100 rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden bg-transparent">
+  <span class="relative z-20">Serviços</span>
+  <span class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"></span>
+</a>
+
+<a href="#orcamento" class="relative cursor-pointer py-4 px-8 text-center font-barlow inline-flex justify-center text-base uppercase text-gray-100 rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden bg-transparent">
+  <span class="relative z-20">Orçamento</span>
+  <span class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"></span>
+  <span class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-blue-400 absolute z-0 h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"></span>
+</a>
+            </nav>
+    </div>
+  </header>
+  <!-- Mensagem de marketing e links de orçamento -->
+  <section id="orcamento" class="py-10">
+  <div class="container mx-auto px-6 text-center bg-[#112233] rounded-2xl border border-cyan-400 shadow-lg p-8">
+  <h2 class="text-3xl font-bold text-cyan-300 mb-4">Transforme sua empresa com soluções digitais sob medida!</h2>
+  <p class="text-lg mb-6">Consultoria especializada em TI, desenvolvimento de sistemas, automação e inovação para o seu negócio.</p>
+      <div class="flex flex-col md:flex-row justify-center gap-4 mb-4">
+  <a href="https://wa.me/5599999999999?text=Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all flex items-center justify-center">
+          <svg class="w-5 h-5 mr-2 " fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A12 12 0 003.48 20.52l-1.1 4.02a1 1 0 001.23 1.23l4.02-1.1A12 12 0 0020.52 3.48zm-8.52 17.02a10 10 0 1110-10 10 10 0 01-10 10zm4.29-7.71c-.13-.07-.77-.38-1.12-.53-.3-.13-.65-.27-1.01-.18-.26.06-.41.29-.57.56-.17.28-.34.55-.6.7-.27.16-.54.14-.81.09-.37-.07-.72-.18-1.06-.32a7.36 7.36 0 01-2.36-1.5 7.36 7.36 0 01-1.5-2.36c-.14-.34-.25-.69-.32-1.06-.05-.27-.07-.54.09-.81.15-.26.42-.43.7-.6.27-.16.5-.31.56-.57.09-.36-.05-.71-.18-1.01-.15-.35-.46-.99-.53-1.12-.13-.23-.27-.23-.41-.23h-.34c-.13 0-.34.05-.52.23-.18.18-.7.68-.7 1.65s.72 1.92.82 2.05c.1.13 1.42 2.18 3.45 2.98.48.19.85.3 1.14.39.48.15.92.13 1.27.08.39-.06 1.19-.49 1.36-.96.17-.47.17-.87.12-.96z"></path></svg>
+          Solicitar orçamento via WhatsApp
+        </a>     
+  <a href="mailto:contato@foursolutions.com?subject=Solicitação de Orçamento" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all flex items-center justify-center">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13l8-8V4H4zm16 2.41l-8 8-8-8V20h16V6.41z"></path></svg>
+          Solicitar orçamento por e-mail
+        </a>
+        </div>
+    </div>
+  </section>
+  <!-- Seção Portifólios -->
+  <section id="portfolio" class="py-12 bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364]">
+    <div class="container mx-auto px-6">
+      <div x-data="{active: 0, projetos: [
+        {nome: 'ERP Financeiro', resumo: 'Sistema de gestão financeira para pequenas empresas.', detalhes: 'Desenvolvi um sistema completo para gestão financeira, com dashboard intuitivo e relatórios automáticos.', screenshots: ['/assets/erp1.png', '/assets/erp2.png']},
+        {nome: 'Landing Page E-commerce', resumo: 'Página de vendas otimizada para conversão.', detalhes: 'Landing page com design moderno, integração de pagamentos e alta performance.', screenshots: ['/assets/landing1.png', '/assets/landing2.png']},
+        {nome: 'Dashboard Analytics', resumo: 'Painel de análise de dados em tempo real.', detalhes: 'Dashboard para análise de KPIs, gráficos dinâmicos e exportação de dados.', screenshots: ['/assets/dashboard1.png', '/assets/dashboard2.png']}
+      ], modal: false, modalImgs: []}"
+        class="relative">
+        <div class="flex flex-col md:flex-row items-center justify-between bg-[#112233] rounded-2xl border border-cyan-400 shadow-lg p-8 gap-8">
+          <div class="md:w-1/2 text-white">
+            <h2 id="cases-de-sucesso" class="text-lg font-bold text-cyan-300 mb-2 uppercase tracking-wide">Cases de Sucesso</h2>
+            <template x-for="(projeto, idx) in projetos" :key="idx">
+              <div x-show="active === idx">
+                <h3 class="text-3xl font-extrabold mb-2" x-text="projeto.nome"></h3>
+                <hr class="border-cyan-400 mb-4">
+                <h4 class="text-lg font-bold mb-2">Sobre o projeto</h4>
+                <p class="mb-6 text-base" x-text="projeto.detalhes"></p>
+                <button @click="modal = true; modalImgs = projeto.screenshots" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all">Ver projeto completo</button>
+              </div>
+            </template>
+          </div>
+          <div class="md:w-1/2 flex justify-center items-center">
+            <template x-for="(projeto, idx) in projetos" :key="idx">
+              <img x-show="active === idx" :src="projeto.screenshots[0]" alt="Screenshot projeto" class="rounded-2xl shadow-lg border border-cyan-400 max-w-full md:max-w-[500px] h-auto">
+            </template>
+          </div>
+        </div>
+        <div class="flex justify-center mt-8 gap-4">
+          <template x-for="(projeto, idx) in projetos" :key="idx">
+            <button @click="active = idx" :class="{'bg-cyan-500 text-white': active === idx, 'bg-cyan-100 text-cyan-700': active !== idx}" class="w-4 h-4 rounded-full transition-all"></button>
+          </template>
+        </div>
+        <!-- Modal de screenshots -->
+        <div x-show="modal" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50" @click.away="modal = false">
+          <div class="bg-white rounded-lg p-6 max-w-2xl w-full">
+            <h4 class="text-lg font-bold text-blue-700 mb-4">Screenshots do Projeto</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <template x-for="img in modalImgs" :key="img">
+                <img :src="img" alt="Screenshot" class="rounded shadow h-40 object-cover">
+              </template>
+            </div>
+            <button @click="modal = false" class="mt-6 bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-4 rounded font-semibold">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Slider de identidades visuais dos clientes -->
+  <section id="clientes" class="py-8">
+  <div class="container mx-auto px-6 bg-[#112233] rounded-2xl border border-cyan-400 shadow-lg p-8">
+  <h2 id="clientesAtendidos" class="text-xl font-bold text-cyan-300 uppercase  text-center">Clientes atendidos</h2>
+      <div x-data="{active: 0, logos: ['/assets/cliente1.png','/assets/cliente2.png','/assets/cliente3.png','/assets/cliente4.png','/assets/cliente5.png']}" class="relative flex items-center justify-center">
+        <button @click="active = (active - 1 + logos.length) % logos.length" class="absolute left-0 bg-blue-100 hover:bg-blue-200 rounded-full p-2" title="Anterior">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+        </button>
+  <img :src="logos[active]" alt="Logo cliente" class="h-16 mx-8 rounded shadow bg-white p-2 object-contain max-w-[120px]">
+        <button @click="active = (active + 1) % logos.length" class="absolute right-0 bg-blue-100 hover:bg-blue-200 rounded-full p-2" title="Próximo">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Depoimentos de clientes -->
+  <section id="depoimentos" class="py-12">
+  <div class="container mx-auto px-6 bg-[#112233] rounded-2xl border border-cyan-400 shadow-lg p-8">
+  <h2 class="text-xl font-bold text-cyan-300 mb-6 text-center uppercase">Depoimentos de Clientes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-[#203a43] rounded-2xl border border-cyan-400 p-6 shadow-lg max-w-md w-full">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-lg font-bold text-white">5,0</span>
+              <span class="flex gap-1">
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+              </span>
+            </div>
+            <p class="text-white mb-6">Agradeço imensamente à equipe 4 Solutions pelo apoio e parceria</p>
+            <div class="flex items-center gap-3 mt-4">
+              <img src="/assets/avatar1.png" alt="Priscila Souza" class="w-12 h-12 rounded-full object-cover border-2 border-cyan-400">
+              <div>
+                <span class="font-bold text-white block">Jon Doe</span>
+                <span class="text-cyan-100 text-sm block">Funilaria </span>
+              </div>
+            </div>
+          </div>
+            <div class="bg-[#203a43] rounded-2xl border border-cyan-400 p-6 shadow-lg max-w-md w-full">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-lg font-bold text-white">5,0</span>
+                <span class="flex gap-1">
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                </span>
+              </div>
+              <p class="text-white mb-6">Excelente trabalho! O site ficou moderno, rápido e muito funcional. Atendimento sempre disponível para tirar dúvidas e propor soluções. Recomendo para quem busca qualidade e profissionalismo.</p>
+              <div class="flex items-center gap-3 mt-4">
+                <img src="/assets/avatar2.png" alt="Carlos Mendes" class="w-12 h-12 rounded-full object-cover border-2 border-cyan-400">
+                <div>
+                  <span class="font-bold text-white block">Carlos Mendes</span>
+                  <span class="text-cyan-100 text-sm block">Consultoria Empresarial</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#203a43] rounded-2xl border border-cyan-400 p-6 shadow-lg max-w-md w-full">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-lg font-bold text-white">5,0</span>
+                <span class="flex gap-1">
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.955L10 0l2.951 5.955 6.561.955-4.756 4.635 1.122 6.545z"/></svg>
+                </span>
+              </div>
+              <p class="text-white mb-6">Excelente trabalho! O site ficou moderno, rápido e muito funcional. Feliz com o resultado.</p>
+              <div class="flex items-center gap-3 mt-4">
+                <img src="/assets/avatar3.png" alt="Carlos Mendes" class="w-12 h-12 rounded-full object-cover border-2 border-cyan-400">
+                <div>
+                  <span class="font-bold text-white block">Maria</span>
+                  <span class="text-cyan-100 text-sm block">Contabilidade Maria</span>
+                </div>
+              </div>
+            </div>
+          <!-- Adicione mais depoimentos aqui seguindo o mesmo padrão -->
+      </div>
+    </div>
+  </section>
+  <!-- Quem somos -->
+  <section id="quem-somos" class="py-12">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-8 bg-[#112233] rounded-2xl border border-cyan-400 shadow-lg p-8">
+      <div class="md:w-1/2">
+  <h2 id="quem-somos" class="text-xl font-bold text-cyan-300 mb-4 uppercase">Quem somos</h2>
+        <p class="text-gray-50 mb-4">Somos uma consultoria especializada em TI, formada por 4 amigos que se conheceram na faculdade e que têm o sonho de proporcionar soluções acessíveis à quem precisa! Focada em soluções digitais inovadoras para empresas de pequeno porte. Nossa equipe une experiência técnica, criatividade e agilidade para entregar resultados reais.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-yellow-900 text-yellow-100 px-2 py-1 rounded text-xs font-semibold">JS</span>
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-semibold">Python</span>
+          <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded text-xs font-semibold">HTML</span>
+          <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">CSS</span>
+          <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-semibold">PHP</span>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="/assets/equipe.png" alt="Equipe Four Solutions" class="rounded-full h-40 w-40 object-cover shadow">
+      </div>
+    </div>
+  </section>
+  <!-- Serviços -->
+  <section id="servicos" class="py-12">
+    <div class="container mx-auto px-6">
+      <h2 id="servicos" class="text-xl font-bold text-cyan-300 mb-6 text-center uppercase">Serviços</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-[#203a43] rounded-2xl border border-cyan-400 p-6 shadow text-center">
+          <h3 class="font-semibold text-cyan-300 mb-2">Mini ERPs</h3>
+          <p class="text-white text-sm">Desenvolvimento de sistemas de gestão sob medida para pequenas empresas.</p>
+        </div>
+        <div class="bg-[#203a43] rounded-2xl border border-cyan-400 p-6 shadow text-center">
+          <h3 class="font-semibold text-cyan-300 mb-2">Aplicações sob medida</h3>
+          <p class="text-white text-sm">Soluções personalizadas para necessidades específicas do seu negócio.</p>
+        </div>
+        <div class="bg-[#203a43] rounded-2xl border border-cyan-400 p-6 shadow text-center">
+          <h3 class="font-semibold text-cyan-300 mb-2">Landing Pages</h3>
+          <p class="text-white text-sm">Criação de páginas de alta conversão para campanhas e produtos.</p>
+        </div>
+        <div class="bg-[#203a43] rounded-2xl border border-cyan-400 p-6 shadow text-center">
+          <h3 class="font-semibold text-cyan-300 mb-2">E-commerces</h3>
+          <p class="text-white text-sm">Desenvolvimento de lojas virtuais completas e integradas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section id="faq" class="py-12">
+  
+  <h2 class="text-xl font-bold text-cyan-300 mb-6 text-center uppercase">Perguntas Frequentes</h2>
+      <div x-data="{open: null}" class="max-w-2xl mx-auto">
+        <div class="mb-4">
+          <button @click="open = open === 1 ? null : 1" class="w-full text-left bg-[#203a43] rounded-2xl border border-cyan-400 px-6 py-4 font-semibold text-white flex items-center gap-2 focus:outline-none transition-all">
+            <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+            Quais tecnologias vocês utilizam?
+          </button>
+          <div x-show="open === 1" class="px-4 py-2 text-gray-100">Utilizamos JS, Python, HTML, CSS, PHP e outras tecnologias modernas.</div>
+        </div>
+        <div class="mb-4">
+          <button @click="open = open === 2 ? null : 2" class="w-full text-left bg-[#203a43] rounded-2xl border border-cyan-400 px-6 py-4 font-semibold text-white flex items-center gap-2 focus:outline-none transition-all">
+            <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+            Vocês desenvolvem sistemas sob medida?
+          </button>
+          <div x-show="open === 2" class="px-4 py-2 text-gray-100">Sim, criamos soluções personalizadas conforme a necessidade do cliente.</div>
+        </div>
+        <div class="mb-4">
+          <button @click="open = open === 3 ? null : 3" class="w-full text-left bg-[#203a43] rounded-2xl border border-cyan-400 px-6 py-4 font-semibold text-white flex items-center gap-2 focus:outline-none transition-all">
+            <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+            Como funciona o processo de orçamento?
+          </button>
+          <div x-show="open === 3" class="px-4 py-2 text-gray-100">Você pode solicitar orçamento via WhatsApp ou e-mail, detalhando sua demanda.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Rodapé -->
+  <div x-data="{showTop: false}" @scroll.window="showTop = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50">
+    <footer class="bg-[#112233] py-6 mt-8 border-t border-cyan-400 rounded-t-2xl">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-cyan-100">
+        <span class="font-bold text-cyan-300">Four Solutions</span>
+        <div class="flex gap-4 mt-2 md:mt-0">
+          <a href="#" class="hover:underline">Termos de Uso</a>
+          <a href="#" class="hover:underline">Política de Privacidade</a>
+        </div>
+      </div>
+    </footer>
+    <button x-show="showTop" x-transition class="fixed bottom-8 right-8 bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-5 rounded-full shadow-lg transition-all z-50" @click="window.scrollTo({top: 0, behavior: 'smooth'})">
+      Voltar ao topo
+    </button>
+  </div>
+</body>
+</html>
