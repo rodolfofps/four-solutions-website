@@ -126,18 +126,60 @@
   </section>
   <!-- Slider de identidades visuais dos clientes -->
   <section id="clientes" class="py-8">
-  <div class="container mx-auto px-6 bg-[#112233] rounded-2xl border border-cyan-400 shadow-lg p-8">
-  <h2 id="clientesAtendidos" class="text-xl font-bold text-cyan-300 uppercase  text-center">Clientes atendidos</h2>
-      <div x-data="{active: 0, logos: ['/assets/cliente1.png','/assets/cliente2.png','/assets/cliente3.png','/assets/cliente4.png','/assets/cliente5.png']}" class="relative flex items-center justify-center">
-        <button @click="active = (active - 1 + logos.length) % logos.length" class="absolute left-0 bg-blue-100 hover:bg-blue-200 rounded-full p-2" title="Anterior">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
-        </button>
-  <img :src="logos[active]" alt="Logo cliente" class="h-16 mx-8 rounded shadow bg-white p-2 object-contain max-w-[120px]">
-        <button @click="active = (active + 1) % logos.length" class="absolute right-0 bg-blue-100 hover:bg-blue-200 rounded-full p-2" title="Próximo">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-        </button>
+    <div class="container mx-auto px-6 bg-[#112233] rounded-2xl border border-cyan-400 shadow-lg p-8">
+      <h2 id="clientesAtendidos" class="text-xl font-bold text-cyan-300 uppercase text-center mb-6">Clientes atendidos</h2>
+      <div class="overflow-hidden relative">
+          <div id="clientes-slider" class="flex gap-8 items-center" style="width: max-content;">
+            <img src="/assets/cliente1.png" alt="Cliente 1" class="h-16 rounded shadow bg-white p-2 object-contain max-w-[120px]">
+            <img src="/assets/cliente2.png" alt="Cliente 2" class="h-16 rounded shadow bg-white p-2 object-contain max-w-[120px]">
+            <img src="/assets/cliente3.png" alt="Cliente 3" class="h-16 rounded shadow bg-white p-2 object-contain max-w-[120px]">
+            <img src="/assets/cliente4.png" alt="Cliente 4" class="h-16 rounded shadow bg-white p-2 object-contain max-w-[120px]">
+            <img src="/assets/cliente5.png" alt="Cliente 5" class="h-16 rounded shadow bg-white p-2 object-contain max-w-[120px]">
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const slider = document.getElementById('clientes-slider');
+          const container = slider.parentElement;
+          const containerWidth = container.offsetWidth;
+          let pos = 0;
+          const speed = 0.5; // pixels por frame
+          function loop() {
+            pos -= speed;
+            // Quando todo o slider saiu pela esquerda, reinicia à direita
+            if (pos <= -slider.offsetWidth) {
+              pos = containerWidth;
+            }
+            slider.style.transform = `translateX(${pos}px)`;
+            requestAnimationFrame(loop);
+          }
+          loop();
+        });
+      </script>
       </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const slider = document.getElementById('clientes-slider');
+        let pos = 0;
+        const speed = 0.5; // pixels por frame (ajuste para velocidade desejada)
+        const sliderWidth = slider.scrollWidth;
+        const container = slider.parentElement;
+        const containerWidth = container.offsetWidth;
+        function animate() {
+          pos -= speed;
+          if (Math.abs(pos) > sliderWidth - containerWidth) {
+            pos = 0; // Não repete, apenas para no final
+          }
+          slider.style.transform = `translateX(${pos}px)`;
+          if (Math.abs(pos) < sliderWidth - containerWidth) {
+            requestAnimationFrame(animate);
+          }
+        }
+        animate();
+      });
+    </script>
   </section>
   <!-- Depoimentos de clientes -->
   <section id="depoimentos" class="py-12">
@@ -284,7 +326,7 @@
   <div x-data="{showTop: false}" @scroll.window="showTop = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50">
     <footer class="bg-[#112233] py-6 mt-8 border-t border-cyan-400 rounded-t-2xl">
       <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-cyan-100">
-        <span class="font-bold text-cyan-300">Four Solutions</span>
+        <span class="font-bold text-cyan-300">Four Solutions®</span>
         <div class="flex gap-4 mt-2 md:mt-0">
           <a href="#" class="hover:underline">Termos de Uso</a>
           <a href="#" class="hover:underline">Política de Privacidade</a>
