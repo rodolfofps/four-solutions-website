@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const carousel = document.querySelector("#carousel");
 
             const images = [
-                "assets/cliente1.png",
-                "assets/cliente2.png",
-                "assets/cliente3.png",
-                "assets/cliente4.png",
-                "assets/cliente5.png"
+                "../assets/cliente1.png",
+                "../assets/cliente2.png",
+                "../assets/cliente3.png",
+                "../assets/cliente4.png",
+                "../assets/cliente5.png"
 ];
              
 
