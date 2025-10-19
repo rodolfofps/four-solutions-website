@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Four Solutions - Consultoria em TI</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="sliderClientes/script.js"></script>
   <body class="bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] text-white">
   <!-- Header -->
   <header class="bg-[#112233] shadow-lg rounded-b-2xl border-b border-cyan-400">
@@ -125,61 +127,13 @@
     </div>
   </section>
   <!-- Slider de identidades visuais dos clientes -->
-  <section id="clientes" class="py-8">
-    <div class="container mx-auto px-6 bg-[#112233] rounded-2xl border border-cyan-400 shadow-lg p-8">
-      <h2 id="clientesAtendidos" class="text-xl font-bold text-cyan-300 uppercase text-center mb-6">Clientes atendidos</h2>
-      <div class="overflow-hidden relative">
-          <div id="clientes-slider" class="flex gap-8 items-center">
-            <img src="/assets/cliente1.png" alt="Cliente 1" class="h-16 rounded shadow bg-white p-2 object-contain max-w-[120px]">
-            <img src="/assets/cliente2.png" alt="Cliente 2" class="h-16 rounded shadow bg-white p-2 object-contain max-w-[120px]">
-            <img src="/assets/cliente3.png" alt="Cliente 3" class="h-16 rounded shadow bg-white p-2 object-contain max-w-[120px]">
-            <img src="/assets/cliente4.png" alt="Cliente 4" class="h-16 rounded shadow bg-white p-2 object-contain max-w-[120px]">
-            <img src="/assets/cliente5.png" alt="Cliente 5" class="h-16 rounded shadow bg-white p-2 object-contain max-w-[120px]">
-          </div>
-        </div>
-      </div>
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const slider = document.getElementById('clientes-slider');
-          const container = slider.parentElement;
-          const containerWidth = container.offsetWidth;
-          let pos = 0;
-          const speed = 2; // pixels por frame
-          function loop() {
-            pos -= speed;
-            // Quando todo o slider saiu pela esquerda, reinicia à direita
-            if (pos <= -slider.offsetWidth) {
-              pos = containerWidth;
-            }
-            slider.style.transform = `translateX(${pos}px)`;
-            requestAnimationFrame(loop);
-          }
-          loop();
-        });
-      </script>
-      </div>
+  <section class="container mx-auto px-8 text-center bg-transparent rounded-2xl border border-cyan-400 shadow-lg p-8 relative" id="clientes">
+    <div class="absolute top-0 left-0 text-white bg-[#112233] font-bold text-lg px-4 py-2 rounded-br-lg shadow-md z-10 h-full p-1flex items-center clientes-gradient">
+        NOSSOS CLIENTES
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const slider = document.getElementById('clientes-slider');
-        let pos = 0;
-        const speed = 0.5; // pixels por frame (ajuste para velocidade desejada)
-        const sliderWidth = slider.scrollWidth;
-        const container = slider.parentElement;
-        const containerWidth = container.offsetWidth;
-        function animate() {
-          pos -= speed;
-          if (Math.abs(pos) > sliderWidth - containerWidth) {
-            pos = 0; // Não repete, apenas para no final
-          }
-          slider.style.transform = `translateX(${pos}px)`;
-          if (Math.abs(pos) < sliderWidth - containerWidth) {
-            requestAnimationFrame(animate);
-          }
-        }
-        animate();
-      });
-    </script>
+    <div id="carousel"></div>    
+    <script>carousel(false);</script>
+    <script>carousel(true);</script>
   </section>
   <!-- Depoimentos de clientes -->
   <section id="depoimentos" class="py-12">
