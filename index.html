@@ -13,6 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="sliderClientes/script.js"></script>
+  <script src="politicaPrivacidade/privacyPolicy.js"></script>
   <body class="bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] text-white">
   <!-- Header -->
   <header class="bg-[#112233] shadow-lg rounded-b-2xl border-b border-cyan-400">
@@ -67,7 +68,7 @@
   <h2 class="text-3xl font-bold text-cyan-300 mb-4">Transforme sua empresa com soluções digitais sob medida!</h2>
   <p class="text-lg mb-6">Consultoria especializada em TI, desenvolvimento de sistemas, automação e inovação para o seu negócio.</p>
       <div class="flex flex-col md:flex-row justify-center gap-4 mb-4">
-  <a href="https://wa.me/5599999999999?text=Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all flex items-center justify-center">
+  <a href="https://wa.me/5519996245691?text=Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all flex items-center justify-center">
           <svg class="w-5 h-5 mr-2 " fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A12 12 0 003.48 20.52l-1.1 4.02a1 1 0 001.23 1.23l4.02-1.1A12 12 0 0020.52 3.48zm-8.52 17.02a10 10 0 1110-10 10 10 0 01-10 10zm4.29-7.71c-.13-.07-.77-.38-1.12-.53-.3-.13-.65-.27-1.01-.18-.26.06-.41.29-.57.56-.17.28-.34.55-.6.7-.27.16-.54.14-.81.09-.37-.07-.72-.18-1.06-.32a7.36 7.36 0 01-2.36-1.5 7.36 7.36 0 01-1.5-2.36c-.14-.34-.25-.69-.32-1.06-.05-.27-.07-.54.09-.81.15-.26.42-.43.7-.6.27-.16.5-.31.56-.57.09-.36-.05-.71-.18-1.01-.15-.35-.46-.99-.53-1.12-.13-.23-.27-.23-.41-.23h-.34c-.13 0-.34.05-.52.23-.18.18-.7.68-.7 1.65s.72 1.92.82 2.05c.1.13 1.42 2.18 3.45 2.98.48.19.85.3 1.14.39.48.15.92.13 1.27.08.39-.06 1.19-.49 1.36-.96.17-.47.17-.87.12-.96z"></path></svg>
           Solicitar orçamento via WhatsApp
         </a>     
@@ -278,12 +279,46 @@
   </section>
   <!-- Rodapé -->
   <div x-data="{showTop: false}" @scroll.window="showTop = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50">
+    <!-- Modal do Termo de Privacidade -->
+<div id="privacyModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-2xl shadow-2xl max-w-3xl w-11/12 max-h-[80vh] overflow-y-auto p-8 relative">
+    <!-- Botão Fechar -->
+    <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Termo de Privacidade</h2>
+    <p class="text-gray-700 leading-relaxed mb-4">
+      Este termo descreve como coletamos, usamos e protegemos suas informações pessoais quando você utiliza nossos serviços. 
+      Garantimos que todos os dados fornecidos são tratados conforme a legislação vigente (LGPD).
+    </p>
+
+    <h3 class="text-lg font-semibold text-gray-800 mt-4">1. Coleta de informações</h3>
+    <p class="text-gray-700 mb-3">
+      Coletamos apenas informações necessárias para a prestação de nossos serviços, como nome, e-mail e telefone.
+    </p>
+
+    <h3 class="text-lg font-semibold text-gray-800 mt-4">2. Uso das informações</h3>
+    <p class="text-gray-700 mb-3">
+      Os dados são utilizados para comunicação, melhoria da experiência e envio de informações relevantes, 
+      sempre com seu consentimento.
+    </p>
+
+    <h3 class="text-lg font-semibold text-gray-800 mt-4">3. Direitos do usuário</h3>
+    <p class="text-gray-700 mb-3">
+      Você pode solicitar a exclusão ou correção de seus dados a qualquer momento, conforme previsto na LGPD.
+    </p>
+
+    <p class="text-gray-700 mt-6">
+      Para mais informações, entre em contato pelo nosso e-mail de suporte.
+    </p>
+  </div>
+</div>
+
     <footer class="bg-[#112233] py-6 mt-8 border-t border-cyan-400 rounded-t-2xl">
       <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-cyan-100">
         <span class="font-bold text-cyan-300">Four Solutions®</span>
         <div class="flex gap-4 mt-2 md:mt-0">
           <a href="#" class="hover:underline">Termos de Uso</a>
-          <a href="#" class="hover:underline">Política de Privacidade</a>
+          <a href="#" id="privacyLink"  class="hover:underline">Política de Privacidade</a>
         </div>
       </div>
     </footer>
