@@ -41,3 +41,4 @@ document.addEventListener("DOMContentLoaded", () => {
             carousel.appendChild(createGroup(false));
             carousel.appendChild(createGroup(true));
         });
+
